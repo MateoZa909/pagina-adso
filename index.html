@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
 
+    <!-- Estilos Globales -->
     <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Menu lateral -->
+    <link rel="stylesheet" href="/css/menu.css">
 
     <!-- CSS de Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -18,15 +22,15 @@
 <body class="container">
     <!-- HEADER -->
     <div class="menu-user mt-2">
-        <img src="./images/menu-alt-left.svg" alt="menu">
-        <img src="./images/user-two.svg" alt="iniciar sesión">
+        <img class="menu" src="./images/menu-alt-left.svg" alt="menu">
+        <img class="user" src="./images/user-two.svg" alt="iniciar sesión">
     </div>
     <!-- HEADER -->
 
     <!-- SECCION LOGO -->
     <div class="logo-name">
         <img src="./images/Subtract.png" alt="logo">
-        <p>Nombre logo</p>
+        <p class="name-logo">Nombre logo</p>
     </div>
     <!-- SECCION LOGO -->
 
@@ -166,6 +170,57 @@
     </div>
     <!-- Ultimas noticias  -->
 
+    <!-- MODAL DE MENU | MAS OPCIONES -->   
+    <div class="back-sidebar" style="display: none;">
+        <div class="close-sidebar">
+            <img class="close-modal" src="/images/close.svg" alt="cerrar barra lateral">
+        </div>
+        <div class="back-item-sidebar" >
+            <div class="item-sidebar">
+                <img src="/images/heart.svg" alt="noticias favoritas">
+                <span>Favoritos</span>
+            </div>
+            <div class="item-sidebar">
+                <img src="/images/inbox.svg" alt="noticias guardadas">
+                <span>Favoritos</span>
+            </div>
+            <div class="item-sidebar">
+                <img src="/images/feedback.svg" alt="noticias favoritas">
+                <span>Feedback & Sugerencias</span>
+            </div>
+        </div>
+    </div> 
+    <!-- MODAL DE MENU | MAS OPCIONES -->
+
+
+    <!-- MODAL DE MENU | USUARIO -->
+    <div class="back-user" style="display: none;">
+        <div class="top-content">
+            <button class="btn-logout">
+                <img src="/images/logout.svg" alt="cerrar sesion">
+                Salir
+            </button>
+
+            <div class="close-user">
+                <img src="/images/close.svg" alt="cerrar modal usuario">
+            </div>
+        </div>
+
+        <div class="back-info-user">
+            <div class="back-img">
+                <img src="https://i.pinimg.com/564x/f2/63/25/f2632541bcbad4d795b4b75145ce1880.jpg" alt="Foto de perfil">
+            </div>
+            <div class="back-text">
+                <span>Mateo Bossa</span>
+                <span>mateobossa909@gmail.com</span>
+            </div>
+            <div class="back-edit">
+                <img src="/images/dots.svg" alt="editar">
+            </div>
+        </div>
+    </div>
+    <!-- MODAL DE MENU | USUARIO -->
+
     <div class="footer-content">
         <div class="foot-text">
             <p>By: @Mateo</p>
@@ -174,5 +229,7 @@
             <img src="/images/news.svg" alt="">
         </div>
     </div>
+
+    <script src="/js/index.js"></script>
 </body>
 </html>

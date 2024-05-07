@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --rojo: #9F1717;
+    --texto-color: #D1C9C9;
+    --font-family-divisas: 'Montserrat', sans-serif;
+    --font-text-card: 'Kadwa', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
+/* Personaliza la barra de desplazamiento completa */
+::-webkit-scrollbar {
+    width: 12px; /* Anchura de la barra de desplazamiento */
+    height: 12px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+/* Personaliza el track (parte donde se mueve el thumb) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo del track */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Personaliza el thumb (parte móvil de la barra) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color de fondo del thumb */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 3px solid #f1f1f1; /* Borde entre el thumb y el track */
+}
+
+/* Cambia el color del thumb al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color de fondo del thumb cuando se pasa el mouse */
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;  /* Usar min-height en lugar de height para cubrir contenido más alto que la pantalla */
+    background-image: url('/images/fondo-login.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all {
+    padding: 0 10px;
+}
+
+.inputs {
+    margin-top: 13px;
+    /* background-color: lightcoral; */
+}
+
+.back-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* padding: 5px; */
+    /* background-color: lightblue; */
+    padding-top: 10px;
+}
+
+.back-title h2 {
+    font-size: 21px;
+    font-family: var(--font-inter);
+    padding: 5px 0;
+    font-weight: bold;
+    color: #070707;
+}
+
+.back-image {
+    /* background-color: lightblue; */
+    align-items: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.back-image h1 {
+    color: #1a1a1a;
+}
+
+.content .back-image {
+    width: 34px;
+}
+
+.formulario {
+    margin-top: 20px;
+    background-color: rgb(224, 224, 224);
+    height: 500px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.formulario, .back-image {
+    width: 90%;  /* Utilizar un ancho relativo para mejor ajuste en dispositivos móviles */
+    max-width: 500px;  /* Limitar el ancho máximo para que no se vea demasiado grande en pantallas grandes */
+    margin: 20px;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: var(--font-montserrat);
+    color: #131212;
+}
+
+input {
+    width: 80px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+}
+
+.back-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.back-btn button {
+    padding: 10px;
+    background-color: #272727;
+    color: white;
+    border: none;
+    width: 140px;
+    cursor: pointer;
+    font-family: var(--font-montserrat);
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+    .all {
+        margin: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    .back-image {
+        width: 50%;
+        height: 63%;
+        background-color: rgb(5, 79, 119);
+        display: flex;
+        align-items: center;
+        box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(46, 46, 46, 0.5);
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+
+    .back-image img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .back-image h1 {
+        color: #f1f1f1;
+    }
+
+    .formulario, .back-image {
+        width: 70%; /* Aumentar el ancho del formulario y el contenedor del logotipo */
+    }
+    
+    .back-image {
+        padding: 40px; /* Añadir más padding para un mejor balance visual */
+        justify-content: center; /* Centrar el contenido si es necesario */
+    }
+}
+
+@media (min-width: 1024px) {
+    .all {
+        margin: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
+    .back-image h1 {
+        color: #f1f1f1;
+    }
+
+    .back-title h2 {
+        font-size: 30px;
+    }
+
+    .back-image {
+        width: 50%;
+        background-color: rgb(5, 79, 119);
+        display: flex;
+        align-items: center;
+        box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(41, 41, 41, 0.5);
+    }
+
+    .back-image img {
+        height: 130px;
+        width: 130px;
+    }
+
+    .formulario, .back-image {
+        width: 60%; /* Mantener un ancho considerable en pantallas grandes */
+    }
+
+    .back-image {
+        padding: 50px; /* Ajustar el padding en pantallas más grandes */
+    }
+
+    button {
+        width: 50%;
+    }
+}

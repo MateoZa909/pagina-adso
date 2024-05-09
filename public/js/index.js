@@ -72,3 +72,17 @@ userModal.addEventListener('transitionend', (event) => {
         infoEdit.style.display = 'none';
     }
 });
+
+// **********************
+// FUNCIONES PARA PETICIONES DE API
+const news = () => {
+    axios({
+        method: 'GET',
+        url: `https://gnews.io/api/v4/search?q=example&apikey=d56863e988b7efbcaba1bb454aa72a6e`
+    }).then(res => {
+        let noticias = res;
+        console.log(noticias);
+    })
+}
+
+news();

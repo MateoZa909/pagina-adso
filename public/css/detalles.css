@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(192, 192, 192);
+    min-height: 100vh; /* Asegura que el gradiente cubra toda la altura visible de la página */
+    margin: 0; /* Elimina cualquier margen predeterminado del navegador */
+    padding-top: 55px;
+}
+
+
+:root {
+    --rojo: #9F1717;
+    --texto-color: #D1C9C9;
+    --font-family-divisas: 'Montserrat', sans-serif;
+    --font-text-card: 'Kadwa', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;  /* Ajusté esto para incluir el padding en la altura total */
+    /* padding-top: 15px; */
+    position: fixed; /* Fija el nav en la parte superior de la página */
+    top: 0;          /* Alinea el nav en la parte superior del viewport */
+    left: 0; 
+    z-index: 1000;   /* Asegura que el nav esté sobre otros elementos */
+    background-color: rgb(10, 108, 160);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Opcional: agrega sombra para resaltar */
+}
+
+nav img {
+    height: 45px;
+    width: 45px;
+}
+
+nav h2 {
+    font-family: var(--font-montserrat);
+    color: white;
+}
+
+.card {
+    margin-bottom: 20px;
+    /* background-color: lavenderblush; */
+}
+
+/* CONTENEDOR NOTICIAS */
+.card-news {
+    width: 100%;
+    height: 320px;
+    /* background-color: lightblue; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-news {
+    background-color: #D9D9D9;
+    height: 43px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-news h1 {
+    font-size: 22px;
+    font-family: var(--font-inter);
+    padding-right: 40px;
+    color: #1D465C;
+}
+
+.header-news .box-like-save {
+    background-color: #B3B3B3;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.header-news .box-like-save button {
+    width: 39px;
+    height: 23px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.header-news .box-like-save button:hover {
+    background-color: #868686;
+}
+
+.header-news .box-like-save button img {
+    width: 17px;
+}
+
+/* IMAGEN */
+.content-image {
+    width: 100%;
+    height: 143px;
+}
+
+.content-image img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTENIDO INFORMACION */
+.content-info {
+    /* background-color: lightpink; */
+    padding: 5px 10px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.full-info {
+    max-width: 100%;  /* Asegura que el contenedor no exceda el ancho de su contenedor padre */
+    padding: 20px;    /* Proporciona algo de espacio interno */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+    background-color: #f9f9f98c; /* Opcional: solo para hacerlo más visible */
+}
+
+.full-info p {
+    overflow-wrap: break-word; /* Asegura que el texto se ajuste dentro del contenedor */
+    text-align: justify; /* Opcional: para un mejor flujo del texto y distribución uniforme */
+    font-size: 15px;
+}
+
+/* ******************************** */
+/* FOOTER */
+footer {
+    background-color: #3F3E3E;
+    box-shadow: 10px 0 15px -10px rgba(0, 0, 0, 0.5), 
+    -10px 0 15px -10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    position: relative;
+    bottom: 0;
+}
+
+footer {
+    color: #fff;
+}
+/* FOOTER */
+/* ******************************** */
